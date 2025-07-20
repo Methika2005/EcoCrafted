@@ -1,0 +1,295 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: transparent;
+  color: #2E2E2E;
+}
+
+/* Fixed Background */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('Eco-Friendly Natural Decor Arrangement.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -10;
+  filter: brightness(0.6);
+}
+
+/* Header / Navbar */
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 1rem 2rem;
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 35px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 6px;
+  min-width: 150px;
+  z-index: 20;
+}
+
+.dropdown.show .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-content {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 5;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.hero h1,
+.hero h2 {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.carousel-placeholder {
+  margin-top: 40px;
+  height: 200px;
+  background: #b7e4c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  color: #1b4332;
+}
+
+/* CTA Button */
+.cta-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #8B5E3C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Cards Section */
+.cards-section {
+  padding: 50px 30px;
+  background-color:  rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.cards-section h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+}
+
+.rating {
+  margin-top: 5px;
+  color: #28a745;
+}
+
+.cta-banner {
+  background-color: #dff6e2;
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 40px;
+}
+
+.cta-banner h2 {
+  font-size: 2rem;
+  color: #1b4332;
+  margin-bottom: 10px;
+}
+
+.cta-banner p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cta-button {
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+
+.cta-button:hover {
+  background-color: #218838;
+}
+
+/* Mission Section */
+.section {
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.mission {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+}
+
+.mission .text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 800px;
+  padding: 0 1rem;
+  z-index: 1;
+}
+
+.mission h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #2E8B57;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.footer a {
+  color: #FAF3E0;
+  margin: 0 1rem;
+  text-decoration: none;
+}
